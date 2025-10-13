@@ -1,3 +1,5 @@
 # Faculdade Estácio
 
-Conteúdo realizado referente ao curso Ciência da Computação.
+**Atenção!!!
+Todo conteúdo inserido e realizado é referente ao curso Ciência da Computação da Faculdade Estácio.
+Acesse o site e conheça mais.
