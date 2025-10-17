@@ -48,7 +48,7 @@ int main() {
     printf("[2] Nível 2 - Aventureiro\n");
     printf("[3] Nível 3 - Mestre\n");
     printf("[4] Informações referente ao Erro\n");
-    printf("Sair\n");
+    printf("[5] Sair\n");
     printf("Escolha: ");
     scanf("%d", &escolha0);
 
