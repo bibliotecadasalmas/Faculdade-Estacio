@@ -1,41 +1,5 @@
 #include <stdio.h>
 
-/*
-    Programa: Movimentação das Peças de Xadrez
-    Nível: Aventureiro
-
-    Descrição:
-    - O programa que você criará irá simular o movimento de três peças: Torre, Bispo e Rainha;
-    - As três estruturas de repetição aprendidas (while, do-while e for) deverão ser utilizadas;
-    - O programa deverá permitir que o usuário escolha, uma por vez, as peças de xadrez Bispo, Torre e Rainha para realizar suas movimentações.
-    - Cada peça deverá se mover um número fixo de casas:
-        - Bispo: 5 casas;
-        - Torre: 5 casas;
-        - Rainha: 8 casas.
-    - Os movimentos de cada peça:
-            - Bispo: deverá simular o movimento do Bispo cinco casas na diagonal para cima e à direita;
-            - Torre: deverá simular o movimento da Torre cinco casas para a direita;
-            - Rainha: deverá simular o movimento da Rainha oito casas para a esquerda.
-    - O programa deverá solicitar ao usuário que escolha qual peça deseja mover primeiro, depois a segunda e por último a terceira.
-    
-    Instruções para implementação:
-    1. Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-    2. Solicite ao usuário que escolha qual peça deseja mover primeiro:
-        - [1] Bispo;
-        - [2] Torre;
-        - [3] Rainha.
-    3. Implemente:
-        - Ao escolher uma peça, o programa deverá imprimir o movimento da peça escolhida, utilizando a estrutura de repetição adequada (while, do-while ou for).
-    4. Após o primeiro movimento, ofereça novas opções para que o usuário escolha as demais peças restantes, até que todas tenham se movimentado.
-    5. Utilize as estruturas:
-        - while;
-        - do-while;
-        - for.
-
-    Observação:
-    - Seria possível utilizar as estruturas de repetição também na primeira escolha para manter o programa ativo até que usuário digitasse uma opção válida. No entanto, neste caso, as estruturas - de repetição - foram reservadas para simular apenas o movimento de cada peça, eliminando a repetição da peça já escolhida.
-*/
-
 int main() {
 
     int escolha1, escolha2, escolha3, bispoInicio, bispoFinal, torreInicio, torreFinal, rainhaInicio, rainhaFinal;

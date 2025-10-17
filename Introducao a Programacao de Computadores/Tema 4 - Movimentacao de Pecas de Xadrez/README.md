@@ -1,5 +1,18 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# 🛣️📚 THE ROAD SO FAR!!!
+
+1.
+*
+1.
+1.
+1.
+
+# ⚠️ NOW!!!
+
+1.
+*
+1.
+1.
+1.
 
 # Desafio de Xadrez - MateCheck
 
@@ -7,14 +20,18 @@ Bem-vindo ao desafio de Xadrez da MateCheck! Este projeto tem como objetivo test
 
 ## Níveis do Desafio
 
-### 🏅 Nível Novato
+### 🎖️ Nível Novato
 
 A equipe de testes da MateCheck recebeu uma solicitação para determinar os limites de utilização do código dentro do jogo. Para isso, a equipe de programação solicitou o envio de blocos de código contendo loops (estruturas de repetição) para avaliação de desempenho e possibilidades de aplicação.
 
+1. **CONTEÚDO QUE SERÁ UTILIZADO**
+   *Estruturas de repetição (loops): while, do-while e for
+
+
 **Movimentação das Peças:**
-- Bispo: 5 casas na diagonal superior direita
-- Torre: 5 casas para a direita
-- Rainha: 8 casas para a esquerda
+* Bispo: 5 casas na diagonal superior direita
+* Torre: 5 casas para a direita
+* Rainha: 8 casas para a esquerda
 
 No jogo, apenas possuímos movimentação para quatro direções, mas o Bispo se mexe na diagonal. Com isso, foi adicionada uma condição para movimentação dessa peça, em que, para movê-lo, utilizamos o comando `printf` e, em seu valor, colocamos a direção usando a combinação de direções básicas. 
 
