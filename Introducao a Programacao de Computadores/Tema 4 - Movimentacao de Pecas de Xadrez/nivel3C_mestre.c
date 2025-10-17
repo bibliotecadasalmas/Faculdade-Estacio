@@ -668,4 +668,6 @@ int main() {
         default:
             printf("Opção invalida (erro 00).");
     }
+
+    return 0;
 }
