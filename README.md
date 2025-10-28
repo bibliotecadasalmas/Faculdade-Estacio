@@ -1,5 +1,5 @@
 # Faculdade Estácio
-
+---
 ## PENSAMENTO COMPUTACIONAL
 1. **Introdução aos princípios fundamentais da computação**: compreender o funcionamento básico dos computadores, explorando códigos e algoritmos para desenvolver soluções práticas e funcionais no cotidiano digital.
  
