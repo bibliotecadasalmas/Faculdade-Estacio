@@ -1,8 +1,10 @@
 # Faculdade Estácio
 
-## **INTRODUÇÃO À PROGRAMAÇÃO DE COMPUTADORES**: Compreender o funcionamento básico dos computadores, explorando códigos e algoritmos para desenvolver soluções práticas e funcionais no cotidiano digital.
+## **INTRODUÇÃO À PROGRAMAÇÃO DE COMPUTADORES**
+Compreender o funcionamento básico dos computadores, explorando códigos e algoritmos para desenvolver soluções práticas e funcionais no cotidiano digital.
 
-## **PENSAMENTO COMPUTACIONAL**: explorar o pensamento computacional para resolver problemas e criar soluções inovadoras em áreas como Educação, Negócios e Engenharia.
+## **PENSAMENTO COMPUTACIONAL**
+Explorar o pensamento computacional para resolver problemas e criar soluções inovadoras em áreas como Educação, Negócios e Engenharia.
 1. Introdução aos princípios fundamentais da computação
     1. Equação essencial dos computadores
         1. Equação fundamental
@@ -16,14 +18,14 @@
         1. Entendendo o código na prática
         1. Demonstrando o uso de variáveis
     * Resumo de aprendizado:
-        * Descrever a equação que representa a essência dos computadores;
-        * Reconhecer o processo de exploração do potencial dos computadores por meio de códigos e algoritmos;
-        * Empregar códigos simples de instruções de computadores;
-        * Utilização do potencial dos computadores;
-        * Código e algoritmo de computadores;
-        * Códigos-fonte de computadores;
-        * Tratamento de erros de sintaxes;
-        * Manipulação de variáveis.
+        * Descrever a equação que representa a essência dos computadores
+        * Reconhecer o processo de exploração do potencial dos computadores por meio de códigos e algoritmos
+        * Empregar códigos simples de instruções de computadores
+        * Utilização do potencial dos computadores
+        * Código e algoritmo de computadores
+        * Códigos-fonte de computadores
+        * Tratamento de erros de sintaxes
+        * Manipulação de variáveis
 1. Pensamento Computacional e Aplicações Nas Áreas de Conhecimento
 
 1. Sistemas Computacionais
