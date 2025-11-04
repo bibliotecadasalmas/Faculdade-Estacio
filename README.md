@@ -27,9 +27,28 @@ Explorar o pensamento computacional para resolver problemas e criar soluções i
         * Tratamento de erros de sintaxes
         * Manipulação de variáveis
 1. Pensamento Computacional e Aplicações Nas Áreas de Conhecimento
-
+    1. Pensamento computacional
+        1. O que é pensamento computacional?
+        1. Pilares do pensamento computacional
+        1. Mercado de trabalho e pensamento computacional
+    1. Pensamento computacional em Economia Criativa, Negócios e Ciências Jurídicas
+        1. Economia Criativa
+        1. Reinventando o mundo dos negócios
+        1. Computação no Direito
+    1. Pensamento computacional em Educação e Engenharia
+        1. Educação no século XXI
+        1. Aplicação do pensamento computacional
+        1. Pensamento computacional e ensino da Engenharia
+    * Resumo de aprendizado:
+        * Definir o pensamento computacional e sua importância para o profissional do século XXI.
+        * Identificar as aplicações do pensamento computacional na Economia Criativa, nos Negócios e nas Ciências Jurídicas.
+        * Reconhecer a relevância do pensamento computacional nas áreas de Educação e Engenharia.
 1. Sistemas Computacionais
-
+    
+    * Resumo de aprendizado:
+        * Identificar os principais componentes de hardware e suas funções nos sistemas computacionais.
+        * Reconhecer os tipos de software e o papel do sistema operacional em diferentes contextos.
+        * Reconhecer os conceitos fundamentais das linguagens de programação, destacando suas diferentes categorias, seus níveis e paradigmas.
 1. Representação de Imagens em Computadores
 
 1. Noções de Programação: Exemplos Com Manipulação de Imagens Digitais
@@ -46,6 +65,6 @@ Explorar o pensamento computacional para resolver problemas e criar soluções i
 
 ***
 
-**Atenção!!!
+**Atenção!!!**
 Todo conteúdo inserido e realizado é referente ao curso Ciência da Computação da Faculdade Estácio.
 Acesse o site e conheça mais.
