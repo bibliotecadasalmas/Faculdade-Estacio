@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-// O Objetivo é ter que fazer manutenção no codigo
+// O Objetivo é ter que fazer o menor possivel de manutenção no codigo
 // Definindo as constantes
-#define LINHA 10 // Índice Coluna - Letras
-#define COLUNA 20 // Índice Linha - Numeros
+#define LINHA 10 // Índice Linha - Letras
+#define COLUNA 10 // Índice Coluna - Númeral
 #define I 3//[i] representa a quantidade de 'navio' a ser colocado (pelo Jogador 1) ou quantidade de 'ataque' a ser lançado (pelo Jogador 2)
-#define J 2//[j] representa a 'quantidade de cordenada (x e y)' a ser informado para se colocar cada navio (pelo Jogador 1) ou para lançar cada 'ataque' (pelo Jogador 2)
+#define J 2//[j] representa a 'quantidade de cordenada (x e y)' a ser informado para se colocar cada navio (pelo Jogador 1) ou para lançar os 'ataque' (pelo Jogador 2)
 
 int main() {
 
     // Variáveis
-    // A matriz[i][j] na variavel: o [i] representa a 'quantidade de navio' a ser colocado (pelo Jogador 1) ou 'quantidade de ataque' a ser lançado (pelo Jogador 2), enquanto o [j] representa a 'quantidade de cordenada (x e y)' a ser informado para se colocar o navio (pelo Jogador 1) ou para lançar o 'ataque' (pelo Jogador 2)
+    // A 'matriz[i][j]' na variavel: o [i] representa a 'quantidade de navio' a ser colocado (pelo Jogador 1) ou 'quantidade de ataque' a ser lançado (pelo Jogador 2), enquanto o [j] representa a 'quantidade de cordenada (x e y)' necessario a ser informado para se colocar o navio (pelo Jogador 1) ou para lançar o 'ataque' (pelo Jogador 2)
     int escolha1[I][J], escolha2[I][J];
     int escolha;
-    int i, j;
-    char coluna[COLUNA];
+    int i, j, k;
+    char indice[COLUNA]; // Vetor a ser inserido no indice da matriz - Letras
 
     // === Menu principal ===
     printf("\n=== BATALHA NAVAL ===\n");
@@ -23,74 +23,90 @@ int main() {
     printf("[3] Sair\n");
     printf("Escolha: ");
     scanf("%d", &escolha);
-
+    
     switch (escolha)
     {
     case 1:
-        // Mostrando o tabuleiro vazio
-        printf("\nTABULEIRO (%dx%d)\n\n", LINHA, COLUNA);
-        // Índice Coluna - Letras
-        printf("   ");
-        for (j = 0; j < COLUNA; j++) printf("%c ", coluna[j] = 'A' + j);
+        // == Tabela Matriz ==
+        printf("\n    "); // Indice Letra
+        for (j = 0; j < COLUNA; j++)
+        {
+            printf("%c ", indice[j] = 'A' + j);
+        }
         printf("\n");
-        // Índice Linha - Número
-        for (i = 1; i <= LINHA; i++) {
-            printf("%2d", i);
-            // Área da matriz preenchido por 0
-            for (j = 0; j < COLUNA; j++) printf(" 0");
+        for (i = 1; i <= LINHA; i++) // Indice Alfabeto
+        {
+            printf("%2d ", i);
+            for (j = 0; j < COLUNA; j++) // Preenchendo a matriz com '0'
+            {
+                printf(" ~");
+            }
             printf("\n");
         }
 
         // === Jogador 1 ===
-        printf("\nJogador 1 - Posicione seus navios (%d posições)\n", I);
-        for (i = 0; i < I; i++) {
-            printf("Posição %d (linha 1-10): ", i + 1);
+        printf("\nJogador 1 - Posicione seus navios (%d posições)\n", I); // Aqui a variavel 'I' esta se referindo a quantidade de 'navios' a ser inserido
+        printf("As posições dos navio serão marcados pelo simbolo 'O'.\n");
+        for (i = 0; i < I; i++)
+        {
+            printf("%dª Posição (linha 1-%d): ", i + 1, LINHA);
             scanf("%d", &escolha1[i][0]);
-            printf("Posição %d (coluna 1-10): ", i + 1);
+            printf("%dª Posição (coluna 1-%d): ", i + 1, COLUNA);
             scanf("%d", &escolha1[i][1]);
         }
 
         // === Jogador 2 ===
-        printf("\nJogador 2 - Escolha suas tentativas (3 ataques)\n");
-        for (i = 0; i < 3; i++) {
-            printf("Ataque %d (linha 1-10): ", i + 1);
+        printf("\nJogador 2 - Escolha suas tentativas (%d ataques)\n", I); // Aqui a variavel 'I' esta se referindo a quantidade de 'ataques' a ser inserido
+        printf("As posições dos ataques serão marcados pelo simbolo 'X'.\n");
+        for (i = 0; i < I; i++)
+        {
+            printf("%dª Ataque (linha 1-%d): ", i + 1, LINHA);
             scanf("%d", &escolha2[i][0]);
-            printf("Ataque %d (coluna 1-10): ", i + 1);
+            printf("%dª Ataque (coluna 1-%d): ", i + 1, COLUNA);
             scanf("%d", &escolha2[i][1]);
         }
 
         // === Validação e resultado ===
         printf("\n=== RESULTADO DO TABULEIRO ===\n\n");
         printf("   ");
-        for (j = 0; j < 10; j++) printf("%c ", coluna[j]);
+        for (j = 0; j < COLUNA; j++)
+        {
+            printf("%c ", indice[j] = 'A' + j);
+        }
         printf("\n");
-
-        for (i = 1; i <= 10; i++) {
-            printf("%2d", i);
-            for (j = 1; j <= 10; j++) {
+        for (i = 1; i <= LINHA; i++)
+        {
+            printf("%2d ", i);
+            for (j = 0; j < COLUNA; j++)
+            {
                 int marcado = 0;
-
-                // Verifica se é posição do jogador 1
-                for (int k = 0; k < 3; k++) {
-                    if (i == escolha1[k][0] && j == escolha1[k][1]) {
-                        printf(" 1");
+                // Verifica se é posição do jogador 2 atacou aqui
+                for (k = 0; k < I; k++)
+                {
+                    if (i == escolha2[k][0] && j == escolha2[k][1])
+                    {
+                        printf(" X");
                         marcado = 1;
                         break;
                     }
                 }
-
                 // Verifica se é posição do jogador 2 (ataque)
-                if (!marcado) {
-                    for (int k = 0; k < 3; k++) {
-                        if (i == escolha2[k][0] && j == escolha2[k][1]) {
-                            printf(" 2");
+                if (!marcado) // SeNão
+                {
+                    for (k = 0; k < I; k++)
+                    {
+                        if (i == escolha1[k][0] && j == escolha1[k][1])
+                        {
+                            printf(" O");
                             marcado = 1;
                             break;
                         }
                     }
                 }
-
-                if (!marcado) printf(" 0");
+                if (!marcado)
+                {
+                    printf(" ~");
+                }
             }
             printf("\n");
         }

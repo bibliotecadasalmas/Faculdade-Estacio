@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 int main() {
+    int matriz[3][3];
+    int target = 5;
+    int found = 0;
 
-    // Variáveis
-    int escolha;
-    int escolha1[3][2], escolha2[3][2]; // cada jogador tem 3 posições (linha e coluna)
-    int i, j;
-    char coluna[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-
-printf("\nTABULEIRO (10x10)\n\n");
-    printf("   ");
-    for (j = 0; j < 10; j++) printf("%c ", coluna[j]);
-    printf("\n");
-    for (i = 1; i <= 10; i++) {
-        printf("%2d", i);
-        for (j = 0; j < 10; j++) printf(" 0");
-        printf("\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            matriz[i][j] = (i * 3) + j + 1;
+            if (matriz[i][j] == target) {
+                printf("Elemento %d encontrado na posição (%d, %d)\n", target, i, j);
+                found = 1;
+                break;
+            }
+        }
+        if (found) break;
     }
 
+    if (!found) {
+        printf("Elemento %d não encontrado na matriz\n", target);
+    }
 
-        return 0;
+    return 0;
 }
