@@ -11,7 +11,7 @@ int main() {
 
     // Variáveis
     // A 'matriz[i][j]' na variavel: o [i] representa a 'quantidade de navio' a ser colocado (pelo Jogador 1) ou 'quantidade de ataque' a ser lançado (pelo Jogador 2), enquanto o [j] representa a 'quantidade de cordenada (x e y)' necessario a ser informado para se colocar o navio (pelo Jogador 1) ou para lançar o 'ataque' (pelo Jogador 2)
-    int escolha1[I][J], escolha2[I][J];
+    int navio[I][J], ataque[I][J];
     int escolha;
     int i, j, k;
     char indice[COLUNA]; // Vetor a ser inserido no indice da matriz - Letras
@@ -50,9 +50,9 @@ int main() {
         for (i = 0; i < I; i++)
         {
             printf("%dª Posição (linha 1-%d): ", i + 1, LINHA);
-            scanf("%d", &escolha1[i][0]);
+            scanf("%d", &navio[i][0]);
             printf("%dª Posição (coluna 1-%d): ", i + 1, COLUNA);
-            scanf("%d", &escolha1[i][1]);
+            scanf("%d", &navio[i][1]);
         }
 
         // === Jogador 2 ===
@@ -61,19 +61,20 @@ int main() {
         for (i = 0; i < I; i++)
         {
             printf("%dª Ataque (linha 1-%d): ", i + 1, LINHA);
-            scanf("%d", &escolha2[i][0]);
+            scanf("%d", &ataque[i][0]);
             printf("%dª Ataque (coluna 1-%d): ", i + 1, COLUNA);
-            scanf("%d", &escolha2[i][1]);
+            scanf("%d", &ataque[i][1]);
         }
 
         // === Validação e resultado ===
         printf("\n=== RESULTADO DO TABULEIRO ===\n\n");
-        printf("   ");
+        printf("    ");
         for (j = 0; j < COLUNA; j++)
         {
             printf("%c ", indice[j] = 'A' + j);
         }
         printf("\n");
+
         for (i = 1; i <= LINHA; i++)
         {
             printf("%2d ", i);
@@ -83,7 +84,7 @@ int main() {
                 // Verifica se é posição do jogador 2 atacou aqui
                 for (k = 0; k < I; k++)
                 {
-                    if (i == escolha2[k][0] && j == escolha2[k][1])
+                    if (i == ataque[k][0] && j == ataque[k][1])
                     {
                         printf(" X");
                         marcado = 1;
@@ -95,7 +96,7 @@ int main() {
                 {
                     for (k = 0; k < I; k++)
                     {
-                        if (i == escolha1[k][0] && j == escolha1[k][1])
+                        if (i == navio[k][0] && j == navio[k][1])
                         {
                             printf(" O");
                             marcado = 1;
